@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen active" id="start-screen">
+        <h1>Waktunya Kuis!</h1>
+        <p>Uji pengetahuanmu dengan pertanyaan-pertanyaan menarik ini</p>
+        <button id="start-btn">Mulai Kuis</button>
+      </div>
+
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Pertanyaan akan muncul di sini</h2>
+          <div class="quiz-info">
+            <p>
+              Pertanyaan <span id="current-question">1</span> dari <span id="total-questions">5</span>
+            </p>
+
+            <p>Skor: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div id="answers-container" class="answers-container">
+          <!-- Answer buttons will be insterted here from our js code later at some point -->
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="screen">
+        <h1>Hasil Kuis</h1>
+        <div class="result-info">
+          <p>Anda mendapatkan <span id="final-score">0</span> dari <span id="max-score">5</span></p>
+
+          <div id="result-message">Kerja bagus!</div>
+        </div>
+        <button id="restart-btn">Mulai Ulang Kuis</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
